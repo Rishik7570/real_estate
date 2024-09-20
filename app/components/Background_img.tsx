@@ -1,10 +1,10 @@
 'use client'
 import Image from "next/image";
 import { icons } from "../assets/assets";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const images = [
-    "/images/bg1.jpg", // make sure this file exists
+    "/images/bg1.jpg",
     "/images/bg3.jpg", 
     "/images/bg4.jpg"
   ];
@@ -14,18 +14,19 @@ const Background_img = () => {
 
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-    const handleClick = () => {
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    };
+    useEffect(()=>{
+      const interval = setInterval(()=>{
+        setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+      },7000)
+      return ()=>clearInterval(interval)
+    },[])
 
   return (
-    <div
-      className={`h-screen w-full bg-cover bg-center transition-all duration-1000`}
-      style={{ backgroundImage: `url(${images[currentImageIndex]})` }}
-      onClick={handleClick}
-    >
+    <div className={`h-screen w-full bg-cover bg-center transition-all duration-1000`}
+      style={{ backgroundImage: `url(${images[currentImageIndex]})` }}>
+
         <div className="relative hidden lg:block">
-            <div className="text-white flex items-center gap-2 bg-sky-800 opacity-75 max-w-[250px] px-5 py-2
+            <div className="text-white flex items-center gap-2 bg-[#344465] opacity-75 max-w-[250px] px-5 py-2
                               absolute top-0 left-[75%]">
                 <Image src={icons.phone} alt="" className="w-10"/>
                 <p>Call Us! 123-456-7890</p>
@@ -33,7 +34,7 @@ const Background_img = () => {
         </div>
 
         <div className="relative hidden lg:block">
-            <div className="text-white max-w-[350px] flex flex-col items-center gap-4 bg-sky-800 opacity-85 px-6 py-5
+            <div className="text-white max-w-[350px] flex flex-col items-center gap-4 bg-[#344465] opacity-85 px-6 py-5
                                 absolute bottom-0 translate-y-[200%] left-[15%]">
                 <p className="text-3xl font-bold mt-2">STUNNING 6 BED HOUSE IN THE HEART OF THE CITY</p>
                 <p className="text-lg">I am a paragraph. 
