@@ -42,6 +42,14 @@ import bg1 from './bg1.jpg'
 import bg3 from './bg3.jpg'
 import bg4 from './bg4.jpg'
 
+// Agent Pics
+import pro1 from './profile/pro1.jpg'
+import pro2 from './profile/pro2.jpg'
+import pro3 from './profile/pro3.jpg'
+import pro4 from './profile/pro4.jpg'
+import pro5 from './profile/pro5.jpg'
+import pro6 from './profile/pro6.jpg'
+
 
 
 export const icons = {
@@ -204,5 +212,44 @@ export const luxhouse = [
         price:13000000,
         rooms:"4 BHK",
         description:"I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I'm a great place for you to tell a story and let your users know a little more about you."
+    }
+]
+
+export const agents = [
+    {
+        id:17,
+        name:"Rishik Singha",
+        type:"Founder",
+        image:pro1
+    },
+    {
+        id:18,
+        name:"Argharaj Roy",
+        type:"CFO",
+        image:pro2
+    },
+    {
+        id:19,
+        name:"Abhisek Sarkar",
+        type:"Customer Agent",
+        image:pro3
+    },
+    {
+        id:20,
+        name:"Aryaman Lahiri",
+        type:"Rental Agent",
+        image:pro4
+    },
+    {
+        id:21,
+        name:"Aditya Ghosh",
+        type:"Sales Agent",
+        image:pro5
+    },
+    {
+        id:22,
+        name:"Imon Majumdar",
+        type:"CEO",
+        image:pro6
     }
 ]

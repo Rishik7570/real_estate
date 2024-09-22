@@ -7,6 +7,8 @@ import Reviews from "./components/Reviews"
 
 
 const page = () => {
+
+
   return (
     <div>
       <Background_img />
