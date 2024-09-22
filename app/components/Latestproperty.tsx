@@ -12,8 +12,8 @@ const Latestproperty = () => {
       <div className="mt-[100px] flex flex-col md:flex-row items-center gap-5">
         {
           luxhouse.slice(0,3).map((house,index)=>(
-            <div key={index} className="max-w-[341px] flex flex-col gap-3">
-              <Link href={`/products/${house.id}`}><Image src={house.image} alt="" className="max-w-[340px]" /></Link>
+            <div key={index} className="w-60 lg:w-80 flex flex-col gap-3">
+              <Link href={`/products/${house.id}`}><Image src={house.image} alt="" className="w-60 lg:w-80" /></Link>
               <p className="text-[#344465] font-bold text-lg">{house.name}</p>
               <p className="text-[#344465] font-extrabold">{house.location}</p>
               <p className="text-[#344465] font-semibold">Rs. {house.price}</p>

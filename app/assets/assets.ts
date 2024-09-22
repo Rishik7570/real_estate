@@ -134,7 +134,7 @@ export const countryhouse = [
 
 export const luxhouse = [
     {
-        id:1,
+        id:9,
         name:"BLUE TOKAI",
         location:"Kolkata",
         image:lux1,
@@ -143,7 +143,7 @@ export const luxhouse = [
         description:"I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I'm a great place for you to tell a story and let your users know a little more about you."
     },
     {
-        id:2,
+        id:10,
         name:"HIND MOTOR",
         location:"Howrah",
         image:lux2,
@@ -152,7 +152,7 @@ export const luxhouse = [
         description:"I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I'm a great place for you to tell a story and let your users know a little more about you."
     },
     {
-        id:3,
+        id:11,
         name:"JUHU BEACH",
         location:"Mumbai",
         image:lux3,
@@ -161,7 +161,7 @@ export const luxhouse = [
         description:"I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I'm a great place for you to tell a story and let your users know a little more about you."
     },
     {
-        id:4,
+        id:12,
         name:"GAZIABAD",
         location:"New Delhi",
         image:lux4,
@@ -170,7 +170,7 @@ export const luxhouse = [
         description:"I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I'm a great place for you to tell a story and let your users know a little more about you."
     },
     {
-        id:5,
+        id:13,
         name:"TARAMANI",
         location:"Chennai",
         image:lux5,
@@ -179,7 +179,7 @@ export const luxhouse = [
         description:"I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I'm a great place for you to tell a story and let your users know a little more about you."
     },
     {
-        id:6,
+        id:14,
         name:"SECUNDERABAD",
         location:"Hyderabad",
         image:lux6,
@@ -188,7 +188,7 @@ export const luxhouse = [
         description:"I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I'm a great place for you to tell a story and let your users know a little more about you."
     },
     {
-        id:7,
+        id:15,
         name:"BELANDUR",
         location:"Bengaluru",
         image:lux7,
@@ -197,7 +197,7 @@ export const luxhouse = [
         description:"I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I'm a great place for you to tell a story and let your users know a little more about you."
     },
     {
-        id:8,
+        id:16,
         name:"AMBER PALACE",
         location:"Jaipur",
         image:lux8,
