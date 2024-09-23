@@ -3,7 +3,7 @@ import { agents } from "../assets/assets"
 import Link from "next/link"
 
 
-const agentpage = () => {
+const Agentpage = () => {
   return (
     <div className="bg-[#1e3054] text-white w-full flex flex-col items-center">
         
@@ -19,7 +19,9 @@ const agentpage = () => {
                         <Image src={agent.image} alt="" className="w-52 h-72"/>
                         <p className="text-[#5272b2] text-xl font-bold">{agent.name}</p>
                         <p className="text-[#cba882]">{agent.type}</p>
-                        <button className="w-full py-2 bg-[#939cb2] text-[#1e3054] hover:text-[#fff] hover:bg-black transition ease-in-out duration-500"><Link href={`/book-online`}>Book now</Link></button>
+                        <Link href={`/book-online`}><button className="w-full py-2 bg-[#939cb2] text-[#1e3054] hover:text-[#fff]
+                           hover:bg-black transition ease-in-out duration-500">Book now</button></Link>
+                        
                     </div>
                 ))
             }
@@ -30,4 +32,4 @@ const agentpage = () => {
   )
 }
 
-export default agentpage
+export default Agentpage

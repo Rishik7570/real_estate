@@ -6,7 +6,8 @@ import Realtors from "./components/Realtors"
 import Reviews from "./components/Reviews"
 
 
-const page = () => {
+
+const Homepage = () => {
 
 
   return (
@@ -21,4 +22,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Homepage

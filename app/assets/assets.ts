@@ -72,6 +72,7 @@ export const countryhouse = [
         image:c1,
         price:3000000,
         rooms:"2 BHK",
+        type:"rental",
         description:"I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I'm a great place for you to tell a story and let your users know a little more about you."
     },
     {
@@ -81,6 +82,7 @@ export const countryhouse = [
         image:c2,
         price:2500000,
         rooms:"2 BHK",
+        type:"rental",
         description:"I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I'm a great place for you to tell a story and let your users know a little more about you."
     },
     {
@@ -90,6 +92,7 @@ export const countryhouse = [
         image:c3,
         price:3500000,
         rooms:"3 BHK",
+        type:"rental",
         description:"I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I'm a great place for you to tell a story and let your users know a little more about you."
     },
     {
@@ -99,6 +102,7 @@ export const countryhouse = [
         image:c4,
         price:7000000,
         rooms:"5 BHK",
+        type:"rental",
         description:"I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I'm a great place for you to tell a story and let your users know a little more about you."
     },
     {
@@ -108,6 +112,7 @@ export const countryhouse = [
         image:c5,
         price:2500000,
         rooms:"3 BHK",
+        type:"rental",
         description:"I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I'm a great place for you to tell a story and let your users know a little more about you."
     },
     {
@@ -117,6 +122,7 @@ export const countryhouse = [
         image:c6,
         price:3000000,
         rooms:"2 BHK",
+        type:"rental",
         description:"I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I'm a great place for you to tell a story and let your users know a little more about you."
     },
     {
@@ -126,6 +132,7 @@ export const countryhouse = [
         image:c7,
         price:8000000,
         rooms:"6 BHK",
+        type:"rental",
         description:"I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I'm a great place for you to tell a story and let your users know a little more about you."
     },
     {
@@ -135,6 +142,7 @@ export const countryhouse = [
         image:c8,
         price:2500000,
         rooms:"2 BHK",
+        type:"rental",
         description:"I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I'm a great place for you to tell a story and let your users know a little more about you."
     }
 ]
@@ -148,6 +156,7 @@ export const luxhouse = [
         image:lux1,
         price:10000000,
         rooms:"5 BHK",
+        type:"sales",
         description:"I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I'm a great place for you to tell a story and let your users know a little more about you."
     },
     {
@@ -157,6 +166,7 @@ export const luxhouse = [
         image:lux2,
         price:12000000,
         rooms:"3 BHK",
+        type:"sales",
         description:"I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I'm a great place for you to tell a story and let your users know a little more about you."
     },
     {
@@ -166,6 +176,7 @@ export const luxhouse = [
         image:lux3,
         price:15000000,
         rooms:"6 BHK",
+        type:"sales",
         description:"I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I'm a great place for you to tell a story and let your users know a little more about you."
     },
     {
@@ -175,6 +186,7 @@ export const luxhouse = [
         image:lux4,
         price:17000000,
         rooms:"4 BHK",
+        type:"sales",
         description:"I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I'm a great place for you to tell a story and let your users know a little more about you."
     },
     {
@@ -184,6 +196,7 @@ export const luxhouse = [
         image:lux5,
         price:16000000,
         rooms:"3 BHK",
+        type:"sales",
         description:"I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I'm a great place for you to tell a story and let your users know a little more about you."
     },
     {
@@ -193,6 +206,7 @@ export const luxhouse = [
         image:lux6,
         price:13000000,
         rooms:"4 BHK",
+        type:"sales",
         description:"I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I'm a great place for you to tell a story and let your users know a little more about you."
     },
     {
@@ -202,6 +216,7 @@ export const luxhouse = [
         image:lux7,
         price:20000000,
         rooms:"5 BHK",
+        type:"sales",
         description:"I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I'm a great place for you to tell a story and let your users know a little more about you."
     },
     {
@@ -211,6 +226,7 @@ export const luxhouse = [
         image:lux8,
         price:13000000,
         rooms:"4 BHK",
+        type:"sales",
         description:"I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I'm a great place for you to tell a story and let your users know a little more about you."
     }
 ]
