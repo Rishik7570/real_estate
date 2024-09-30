@@ -5,6 +5,8 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ContextProvider from "./context/context";
 import Cart from "./components/Cart";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -29,6 +31,7 @@ const RootLayout = ({children,}: Readonly<{children: React.ReactNode;}>) => {
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <ContextProvider>
+          <ToastContainer />
           <Navbar />
           <Cart />
             <main>

@@ -36,6 +36,8 @@ type context = {
     setTime: React.Dispatch<React.SetStateAction<string>>
     addToCart: () => void
     removeFromCart: (id: number) => void
+    agent: string
+    setAgent: React.Dispatch<React.SetStateAction<string>>
 }
 
 
@@ -79,6 +81,7 @@ const ContextProvider = (props:props)=>{
         date,setDate,
         time,setTime,
         addToCart,removeFromCart,
+        agent,setAgent
     }
 
     return(

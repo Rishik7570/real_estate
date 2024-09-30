@@ -19,17 +19,16 @@ const Cart = () => {
         </div>
 
         <div className="cart bg-white flex flex-col items-center w-[80%] mx-auto">
-          <p className="text-3xl font-bold mt-3">Cart</p>
+          <p className="text-xl sm:text-3xl font-bold mt-3">Cart</p>
           <hr className="bg-black w-[90%] h-0.5 mt-1"/>
           <div className="w-full">
             {
-            context.cart ? 
+            (context.cart.length>0) ? 
             <div className="">
               
               <div className="">
                 {
                   context.cart.map((item,index)=>{
-                    console.log(item);
                     return(
                     <div key={index} className="">
                       <div className="flex items-center justify-around">
@@ -50,8 +49,8 @@ const Cart = () => {
 
             </div>
              : 
-            <div className="text-xl p-10">
-              Cart empty
+            <div className="text-xl p-10 text-center">
+              No product selected in the cart
             </div>
             }
           </div>

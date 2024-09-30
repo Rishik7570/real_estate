@@ -1,9 +1,15 @@
+'use client'
 import Image from "next/image"
 import { agents } from "../assets/assets"
 import Link from "next/link"
+import { useContext } from "react"
+import { Context } from "../context/context"
 
 
 const Agentpage = () => {
+
+  const context = useContext(Context)
+
   return (
     <div className="bg-[#1e3054] text-white w-full flex flex-col items-center">
         
@@ -20,7 +26,7 @@ const Agentpage = () => {
                         <p className="text-[#5272b2] text-xl font-bold">{agent.name}</p>
                         <p className="text-[#cba882]">{agent.type}</p>
                         <Link href={`/book-online`}><button className="w-full py-2 bg-[#939cb2] text-[#1e3054] hover:text-[#fff]
-                           hover:bg-black transition ease-in-out duration-500">Book now</button></Link>
+                           hover:bg-black transition ease-in-out duration-500" onClick={()=>context?.setAgent(agent.name)}>Book now</button></Link>
                         
                     </div>
                 ))
