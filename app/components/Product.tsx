@@ -21,7 +21,7 @@ const Product = () => {
     <div className="">
 
       <div className="flex flex-col md:flex-row w-[90%] mx-auto gap-20 sm:gap-40 my-14 sm:my-20">
-        <Image src={product.image} alt="" className="items-center w-60 sm:w-[300px] md:w-[400px] aspect-square" />
+        <Image src={product.image} alt="" className="items-center w-full sm:w-[300px] md:w-[400px] aspect-square" />
 
         <div className="flex flex-col gap-6 sm:gap-10">
             <p className="text-3xl font-bold">Location- {product.name}</p>

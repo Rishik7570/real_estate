@@ -21,13 +21,13 @@ const router = useRouter()
         </div>       
       </div>
 
-      <form className="flex flex-col md:flex-row justify-normal md:justify-around mt-12 sm:mt-16">
-          <div className="left flex flex-col gap-4 md:gap-6">
+      <form action={"/"} className="flex flex-col md:flex-row justify-normal md:justify-around mt-12 sm:mt-16">
+          <div className="left flex flex-col gap-4 md:gap-6 mb-12 md:mb-0">
             <p className="text-2xl md:text-3xl font-bold">Client Details</p>
             <hr className="h-0.5 bg-gray-400"/>
             <div className="flex justify-between gap-5 md:gap-3">
-              <input type="text" placeholder="Name" className="border border-gray-700 px-4 py-2 text-base" required/>
-              <input type="email" placeholder="Email" className="border border-gray-700 px-4 py-2 text-base" required/>
+              <input type="text" placeholder="Name" className="w-[50%] border border-gray-700 px-4 py-2 text-base" required/>
+              <input type="email" placeholder="Email" className="w-[50%] border border-gray-700 px-4 py-2 text-base" required/>
             </div>
             <input type="text" placeholder="Phone" className="w-full border border-gray-700 px-4 py-2 text-base" required/>
             <textarea placeholder="Add a message" className="w-full border border-gray-700 px-4 py-2 text-base h-40" />
