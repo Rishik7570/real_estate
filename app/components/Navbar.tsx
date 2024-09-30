@@ -2,16 +2,19 @@
 import Image from "next/image"
 import { icons } from "../assets/assets"
 import Link from "next/link"
-import { useState } from "react"
+import { useContext, useState } from "react"
+import { Context } from "../context/context"
 
 
 const Navbar = () => {
+
+  const context = useContext(Context)
 
   const [visible,setVisible] = useState(false)
 
   return (
     <div className="flex justify-evenly">
-        <div className="nav-left flex gap-5">
+        <div className="nav-left flex items-center gap-5">
             <Link href={'/'}><Image className="w-14 md:w-20 lg:w-24" src={icons.company_logo} alt="" /></Link>
             <Link href={''} className="flex items-center">
                 <div className="flex items-center gap-3">
@@ -19,6 +22,7 @@ const Navbar = () => {
                   <p className="hidden sm:block">Log in</p>
                 </div>
             </Link>
+            <Image src={icons.cart} alt="" className="w-6 md:w-8" onClick={()=>context?.setVisibleCart(! context.visibleCart)} />
             
         </div>
 

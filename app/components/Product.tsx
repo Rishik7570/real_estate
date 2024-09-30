@@ -2,15 +2,19 @@
 import Image from "next/image";
 import { useParams } from "next/navigation"
 import { countryhouse,luxhouse } from "../assets/assets";
+import { useContext } from "react";
+import { Context } from "../context/context";
 
 
 
 const Product = () => {
 
+  const context = useContext(Context)
     const params = useParams()
     const productId = Number(params.id)
     
     const product = countryhouse.find((item)=>item.id === productId) || luxhouse.find((item)=>item.id === productId)
+    context?.setProduct(product)
 
     
   return product ? (

@@ -2,6 +2,7 @@
 import apostrophe from './icons/Apostrophe-Icon-PNG-Image-Background.png'
 import arrow_left from './icons/arrow_icon.png'
 import calendar from './icons/calendar.jpg'
+import cart from './icons/cart.png'
 import company_logo from './icons/company logo.jpg'
 import copy_icon from './icons/copy-icon.png'
 import copyright from './icons/Copyright-Symbol.png'
@@ -53,7 +54,7 @@ import pro6 from './profile/pro6.jpg'
 
 
 export const icons = {
-    apostrophe,arrow_left,calendar,company_logo,
+    apostrophe,arrow_left,calendar,cart,company_logo,
     copy_icon,copyright,facebook_icon,gift,
     insta,location_map,memo,menu,
     stack,phone,triple_dots,video_call,

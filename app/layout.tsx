@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ContextProvider from "./context/context";
+import Cart from "./components/Cart";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -29,6 +30,7 @@ const RootLayout = ({children,}: Readonly<{children: React.ReactNode;}>) => {
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <ContextProvider>
           <Navbar />
+          <Cart />
             <main>
               {children}
             </main>
