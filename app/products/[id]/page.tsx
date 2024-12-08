@@ -5,9 +5,19 @@ import ReactCalendar from "@/app/components/ReactCalendar"
 import Image from "next/image"
 import Link from "next/link"
 
+// Add this function for static generation
+export async function generateStaticParams() {
+  // Define all possible product IDs that will be pre-rendered
+  return [
+    { id: '1' },
+    { id: '2' },
+    { id: '3' },
+    // Add all your product IDs here
+  ]
+}
 
-const productpage = () => {
-  
+// Update the component to receive params
+const productpage = ({ params }) => {
   return (
     <div className="">
       <hr />
@@ -19,11 +29,10 @@ const productpage = () => {
           </div>
         </Link>
       </div>
-
-     <Product />
-     <ReactCalendar />
+      <Product />
+      <ReactCalendar />
     </div>
   )
 }
 
-export default productpage
+export default productpage;
