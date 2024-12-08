@@ -11,6 +11,15 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   distDir: 'build', // Specifies the build directory
+  output: 'standalone', // Optimize for production deployment
+  trailingSlash: true, // Add trailing slashes to all routes
+  // Handle 404 errors gracefully
+  onDemandEntries: {
+    // period (in ms) where the server will keep pages in the buffer
+    maxInactiveAge: 25 * 1000,
+    // number of pages that should be kept simultaneously without being disposed
+    pagesBufferLength: 2,
+  },
 };
 
 export default nextConfig;
