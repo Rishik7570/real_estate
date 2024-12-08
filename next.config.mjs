@@ -10,6 +10,7 @@ const nextConfig = {
     // your project has TypeScript errors.
     ignoreBuildErrors: true,
   },
+  distDir: 'build', // Specifies the build directory
 };
 
 export default nextConfig;
